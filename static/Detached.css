@@ -115,6 +115,7 @@
     .chat-container {
         width: 90%;
         padding: 15px;
+        max-height: 90vh; /* ✅ 限制最大高度，避免內容被裁切 */
     }
 
     .msg-container {
