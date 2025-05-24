@@ -108,7 +108,7 @@ def send_msg():
     except Exception as e:
         return jsonify({"error": f"Server Error: {str(e)}"}), 500
 
-  
+   
 
 if __name__ == '__main__':
     app.run(debug=True)
