@@ -42,7 +42,7 @@
 /* ✅ 訊息容器：調整高度與間距 */
 .msg-container {
     height: 350px;
-    overflow-y: auto;
+    overflow-y: scroll !important; /* ✅ 強制啟動滾動條 */
     display: flex;
     flex-direction: column;
     padding: 20px;
