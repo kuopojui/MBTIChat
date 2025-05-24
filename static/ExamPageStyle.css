@@ -1,0 +1,99 @@
+.bg {
+    background-image: url("/static/image/bg.png") !important;  /* 使用 Flask 提供的靜態檔案路徑 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+/*測驗*/
+.quiz-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15;
+}
+
+.quiz-text {
+    color: #336666; /*  設定白色字體 */
+    font-weight: bolder; /*  設定字體加粗 */
+    font-size: 42px;
+    
+}
+
+.question {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.option {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
+/*選項設計*/
+.custom-radio label {
+    display: block;
+    padding: 12px 20px; /* 增加內邊距，讓選項更舒適 */
+    margin: 15px 0; /* 增加間距，避免選項太擠 */
+    border: 2px solid #336666;
+    border-radius: 25px; /* 讓選項變得更圓潤 */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.opt {
+    font-size: 24px; /* ✅ 字體變大 */
+    color: #336666; /* ✅ 文字變白 */
+    font-weight: bold; /* ✅ 讓文字加粗 */
+    padding: 12px 20px; /* ✅ 增加內邊距，讓選項更清楚 */
+    border: 2px solid #336666; /* ✅ 增加邊框可視化 */
+    border-radius: 12px; /* ✅ 讓選項更圓潤 */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+
+/* 選中後變色 */
+input[type="radio"]:checked + label.opt {
+    background-color: #336666;
+    border-color: #336666;
+    color: white;
+    font-weight: bold;
+}
+
+
+/*隱藏原始 radio 按鈕 */
+.custom-radio input[type="radio"] {
+    display: none;
+}
+
+
+/* ✅ 鼠懸停時變色 */
+.custom-radio label:hover {
+    background-color: #336666; /* ✅ 懸停時背景變色 */
+    color: white !important; /* ✅ 懸停後字體變白 */
+
+}

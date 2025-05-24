@@ -1,0 +1,129 @@
+.bg {
+    background-image: url("/static/image/bg.png") !important; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+/*成果*/
+.title{
+    color: #336666;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.main-text{
+    color: chocolate;
+    font-size: 54px;
+    font-weight: bolder;  
+}
+
+.text{
+    color: #336666;
+    font-size: 24px;
+}
+/*對話框*/
+.chat-container {
+    width: 50%;
+    min-width: 350px;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 25px; /* ✅ 增加內邊距，讓框更寬敞 */
+    border-radius: 24px;
+    background: linear-gradient(135deg, #f0f0f0, #d8d8d8); /* ✅ 淡灰色漸層背景，柔和舒適 */
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2); /* ✅ 陰影加強，立體感更明顯 */
+}
+
+/* ✅ 訊息容器：調整高度與間距 */
+.msg-container {
+    height: 350px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 14px; /* ✅ 增加訊息間距，避免過於擁擠 */
+}
+
+/* ✅ 訊息氣泡樣式 */
+.user-msg, .bot-msg {
+    max-width: 80%;
+    padding: 14px 20px; /* ✅ 讓氣泡更大氣 */
+    border-radius: 18px; /* ✅ 圓角更柔和 */
+    font-size: 16px;
+    line-height: 1.6; /* ✅ 增加行高，提高可讀性 */
+    word-wrap: break-word;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* ✅ 增加陰影，讓氣泡更立體 */
+}
+
+/* ✅ 使用者訊息（右側） */
+.user-msg {
+    align-self: flex-end;
+    background: rgb(235, 178, 72);
+    color: darkgreen;
+    font-weight: bold;
+    border-bottom-right-radius: 6px; /* ✅ 增加個性化角落修飾 */
+}
+
+/* ✅ AI 訊息（左側） */
+.bot-msg {
+    align-self: flex-start;
+    background: linear-gradient(135deg, #a8e6cf, #dcedc1); /* ✅ 柔和綠色漸層 */
+    color: #15400e;
+    font-weight: bold;
+    border-bottom-left-radius: 6px;
+}
+
+/* ✅ 響應式設計 */
+@media (max-width: 768px) {
+    .chat-container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .msg-container {
+        height: 280px;
+    }
+
+    .user-msg, .bot-msg {
+        font-size: 15px;
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .chat-container {
+        width: 65%; /* ✅ 平板模式稍微縮小寬度 */
+        padding: 22px;
+    }
+
+    .msg-container {
+        height: 300px;
+    }
+
+    .user-msg, .bot-msg {
+        font-size: 16px; /* ✅ 保持適中的文字大小 */
+        padding: 14px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .msg-container {
+        height: 250px;
+    }
+
+    .user-msg, .bot-msg {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}

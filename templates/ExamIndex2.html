@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ExamPageStyle.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<body>
+    <!--背景圖片-->
+    <div class="bg">
+    <!--測驗問題-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text ">
+                <h2 class="text-center mb-3"></br></br></h2>
+                <p class="text-center"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="quiz-content">
+        <!--1-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text questions">
+                    <h2 class="text-center mb-3 quiz-text">當別人講話太慢時，你的反應是？</h2>
+                    <div class="custom-radio">
+                        <label class="opt text-center"><input type="radio" name="q1" value="A"> 快一點啦，我快睡著了！</label>
+                        <label class="opt text-center"><input type="radio" name="q1" value="B"> 等他說完再釐清重點。</label>
+                        <label class="opt text-center"><input type="radio" name="q1" value="C"> 溫柔地點頭回應，不打斷。</label>
+                        <label class="opt text-center"><input type="radio" name="q1" value="D"> 做表情戲，假裝被悶壞了。</label>
+                        <label class="opt text-center"><input type="radio" name="q1" value="E"> 靜靜聽，不太想回應。</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--2-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text questions">
+                    <h2 class="text-center mb-3 quiz-text">你比較常使用哪一種語氣？</h2>
+                    <div class="custom-radio">
+                        <label class="opt text-center"><input type="radio" name="q2" value="A"> 很直接、甚至略帶強勢。</label>
+                        <label class="opt text-center"><input type="radio" name="q2" value="B"> 清楚有邏輯，條列重點。</label>
+                        <label class="opt text-center"><input type="radio" name="q2" value="C"> 關心與支持的語氣。</label>
+                        <label class="opt text-center"><input type="radio" name="q2" value="D"> 誇張又有戲劇效果。</label>
+                        <label class="opt text-center"><input type="radio" name="q2" value="E"> 簡單冷淡，不多說。</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--3-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text questions">
+                    <h2 class="text-center mb-3 quiz-text">當朋友抱怨工作時，你通常會？</h2>
+                    <div class="custom-radio">
+                        <label class="opt text-center"><input type="radio" name="q3" value="A"> 立刻吐槽：「你怎麼又來了啦？」</label>
+                        <label class="opt text-center"><input type="radio" name="q3" value="B"> 分析他真正的問題根源。</label>
+                        <label class="opt text-center"><input type="radio" name="q3" value="C"> 安慰他：「我懂你很累，加油。」</label>
+                        <label class="opt text-center"><input type="radio" name="q3" value="D"> 開玩笑說：「要不要我去替你罵老闆？」</label>
+                        <label class="opt text-center"><input type="radio" name="q3" value="E"> 回：「哦。」然後沉默。</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--4-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text questions">
+                    <h2 class="text-center mb-3 quiz-text">你在群組對話裡的風格是？</h2>
+                    <div class="custom-radio">
+                        <label class="opt text-center"><input type="radio" name="q4" value="A"> 不爽會直接講出來。</label>
+                        <label class="opt text-center"><input type="radio" name="q4" value="B"> 回應都言簡意賅，有系統。</label>
+                        <label class="opt text-center"><input type="radio" name="q4" value="C"> 會留心每個人的情緒反應。</label>
+                        <label class="opt text-center"><input type="radio" name="q4" value="D"> 笑話、表情符號永遠最多。</label>
+                        <label class="opt text-center"><input type="radio" name="q4" value="E"> 幾乎不講話，潛水居多。</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--5-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text questions">
+                    <h2 class="text-center mb-3 quiz-text">如果你被誤會了，你會怎麼回應？</h2>
+                    <div class="custom-radio">
+                        <label class="opt text-center"><input type="radio" name="q5" value="A"> 馬上回應，可能會有點大聲。</label>
+                        <label class="opt text-center"><input type="radio" name="q5" value="B"> 解釋前後邏輯，讓對方理解。</label>
+                        <label class="opt text-center"><input type="radio" name="q5" value="C"> 感性說明自己的立場與感受。</label>
+                        <label class="opt text-center"><input type="radio" name="q5" value="D"> 用戲謔的方式化解誤會。</label>
+                        <label class="opt text-center"><input type="radio" name="q5" value="E"> 幾不太回應，就讓對方想去吧。</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--6-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text questions">
+                    <h2 class="text-center mb-3 quiz-text">你最不喜歡的溝通方式是？</h2>
+                    <div class="custom-radio">
+                        <label class="opt text-center"><input type="radio" name="q6" value="A"> 拐彎抹角、拖拖拉拉。</label>
+                        <label class="opt text-center"><input type="radio" name="q6" value="B"> 沒有邏輯的情緒宣洩。</label>
+                        <label class="opt text-center"><input type="radio" name="q6" value="C"> 冷漠無情的態度。</label>
+                        <label class="opt text-center"><input type="radio" name="q6" value="D"> 無聊、沒有互動感的講話。</label>
+                        <label class="opt text-center"><input type="radio" name="q6" value="E"> 過於熱情或誇張的話語。</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--7-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text questions">
+                    <h2 class="text-center mb-3 quiz-text">你的語速通常是？</h2>
+                    <div class="custom-radio">
+                        <label class="opt text-center"><input type="radio" name="q7" value="A"> 很快，常搶著講完。</label>
+                        <label class="opt text-center"><input type="radio" name="q7" value="B"> 中等速度，思考後再說。</label>
+                        <label class="opt text-center"><input type="radio" name="q7" value="C"> 依對方節奏調整。</label>
+                        <label class="opt text-center"><input type="radio" name="q7" value="D"> 時快時慢，情緒豐富。</label>
+                        <label class="opt text-center"><input type="radio" name="q7" value="E"> 偏慢，不急不躁。</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--8-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text questions">
+                    <h2 class="text-center mb-3 quiz-text">你在意別人對你說話的方式嗎？</h2>
+                    <div class="custom-radio">
+                        <label class="opt text-center"><input type="radio" name="q8" value="A"> 很在意，一不對就回嘴。</label>
+                        <label class="opt text-center"><input type="radio" name="q8" value="B"> 會注意，但不太情緒化。</label>
+                        <label class="opt text-center"><input type="radio" name="q8" value="C"> 很在意語氣有沒有尊重與體貼。</label>
+                        <label class="opt text-center"><input type="radio" name="q8" value="D"> 在意好不好笑、氣氛好不好。</label>
+                        <label class="opt text-center"><input type="radio" name="q8" value="E"> 不太在意，無感。</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--9-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text questions">
+                    <h2 class="text-center mb-3 quiz-text">當朋友沒回訊息時，你通常？</h2>
+                    <div class="custom-radio">
+                        <label class="opt text-center"><input type="radio" name="q9" value="A"> 馬上再傳一條問：「看到沒？」</label>
+                        <label class="opt text-center"><input type="radio" name="q9" value="B"> 不急，給他時間處理。</label>
+                        <label class="opt text-center"><input type="radio" name="q9" value="C"> 會擔心是不是出事或不舒服。</label>
+                        <label class="opt text-center"><input type="radio" name="q9" value="D"> 傳一堆 meme 或貼圖轟炸。</label>
+                        <label class="opt text-center"><input type="radio" name="q9" value="E"> 默默等，無所謂。</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--10-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text questions">
+                    <h2 class="text-center mb-3 quiz-text">你最常收到的評語是？</h2>
+                    <div class="custom-radio">
+                        <label class="opt text-center"><input type="radio" name="q10" value="A"> 有點兇、太急了。</label>
+                        <label class="opt text-center"><input type="radio" name="q10" value="B"> 很理性、好像電腦。</label>
+                        <label class="opt text-center"><input type="radio" name="q10" value="C"> 很貼心、很好聊。</label>
+                        <label class="opt text-center"><input type="radio" name="q10" value="D"> 很有趣、好像演戲。</label>
+                        <label class="opt text-center"><input type="radio" name="q10" value="E"> 很冷、像在夢遊。</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--11-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text questions">
+                    <h2 class="text-center mb-3 quiz-text">以下哪句話最接近你的日常用語？</h2>
+                    <div class="custom-radio">
+                        <label class="opt text-center"><input type="radio" name="q11" value="A"> 「說重點！」</label>
+                        <label class="opt text-center"><input type="radio" name="q11" value="B"> 「我覺得這樣推論比較合理。」</label>
+                        <label class="opt text-center"><input type="radio" name="q11" value="C"> 「你還好嗎？我在哦。」</label>
+                        <label class="opt text-center"><input type="radio" name="q11" value="D"> 「天啊我笑爛哈哈哈哈」</label>
+                        <label class="opt text-center"><input type="radio" name="q11" value="E"> 「嗯，隨便你。」</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--12-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text questions">
+                    <h2 class="text-center mb-3 quiz-text">別人說話你最討厭什麼？</h2>
+                    <div class="custom-radio">
+                        <label class="opt text-center"><input type="radio" name="q12" value="A"> 拖時間、講廢話。</label>
+                        <label class="opt text-center"><input type="radio" name="q12" value="B"> 沒頭沒尾、沒邏輯。</label>
+                        <label class="opt text-center"><input type="radio" name="q12" value="C"> 對你冷漠或敷衍。</label>
+                        <label class="opt text-center"><input type="radio" name="q12" value="D"> 太嚴肅、沒趣味。</label>
+                        <label class="opt text-center"><input type="radio" name="q12" value="E"> 太黏人或情緒太多。</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--13-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-10 p-3 mt-5 text questions">
+                    <h2 class="text-center mb-3 quiz-text">你覺得以下哪個描述最適合你？</h2>
+                    <div class="custom-radio">
+                        <label class="opt text-center"><input type="radio" name="q13" value="A"> 直來直往</label>
+                        <label class="opt text-center"><input type="radio" name="q13" value="B"> 理性分析</label>
+                        <label class="opt text-center"><input type="radio" name="q13" value="C"> 溫暖陪伴</label>
+                        <label class="opt text-center"><input type="radio" name="q13" value="D"> 誇張逗趣</label>
+                        <label class="opt text-center"><input type="radio" name="q13" value="E"> 冷靜神秘</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--loading 動畫
+        <div class="d-flex" id="loading" style="display: none;">
+            <h2>正在處理，請稍候...</h2>
+            <div class="spinner"></div>
+        </div>-->
+    </div>
+     <script src="{{ url_for('static', filename='ExamScript.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+</body>
+</html>
