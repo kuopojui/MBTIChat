@@ -5,7 +5,8 @@
     background-position: center;
     width: 100vw; 
     height: 100vh; 
-    overflow: hidden; 
+    overflow-y: auto; /* ✅ 讓內容可滾動，避免底部裁切 */
+
 }
 
 /*測驗*/
